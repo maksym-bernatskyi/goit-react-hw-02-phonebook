@@ -10,7 +10,8 @@ const Filter = ({ value, onChange }) => {
             type="text" 
             value={value} 
             onChange={onChange} 
-            placeholder="Search contact" />
+            placeholder="Search contact"
+            />
         </ContainerSearch>
     );
 };

@@ -22,7 +22,7 @@ class App extends Component {
 
   handleFormSubmit = data => {
     const checkName = this.state.contacts.find(element => element.name === data.name);
-    checkName === undefined ? this.setState(prevState => ({ contacts: [data, ...prevState.contscts] })) : alert(`${data.name} is already in contacts.`);
+    checkName === undefined ? this.setState(prevState => ({ contacts: [data, ...prevState.contacts] })) : alert(`${data.name} is already in contacts.`);
   };
 
   deleteContact = contactId => {

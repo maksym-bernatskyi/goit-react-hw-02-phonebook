@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 
-const Input = ({ title, type, name, value, placeholder, pattern, onChange }) => {
+const Input = ({ 
+    title, 
+    type, 
+    name, 
+    value, 
+    placeholder, 
+    pattern, 
+    onChange,
+}) => {
     return (
         <ContainerInput>
             <Label>{title}</Label>
@@ -13,7 +21,8 @@ const Input = ({ title, type, name, value, placeholder, pattern, onChange }) => 
             pattern={pattern} 
             placeholder={placeholder} 
             autoComplete="off" 
-            required />
+            required
+            />
         </ContainerInput>
     );
 };

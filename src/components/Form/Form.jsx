@@ -46,7 +46,8 @@ class Form extends Component {
                     name="name" 
                     value={this.state.name} 
                     pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-                    placeholder="Please enter the name" />
+                    placeholder="Please enter the name"
+                    />
                 <PhoneInput 
                     defaultCountry="UA"
                     onChange={number => this.setState({ number })}
@@ -59,16 +60,17 @@ class Form extends Component {
                     autoComplete="off"
                     international
                     className="inputPhone"
-                    maxLength="16" />
+                    maxLength="16"
+                    />
                 <ButtonSubmit onSubmit={this.handleSubmit}>Add contact</ButtonSubmit>
             </FormContainer>
         );
-    };
-};
+    }
+}
 
 export default Form;
 
-const FormContainer = styled.div`
+const FormContainer = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;

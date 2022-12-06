@@ -49,7 +49,7 @@ const Item = styled.li`
     background-color: #000;
 `
 
-const ButtonClose = styled.button.attrs(() => ({type: 'button'}))`
+const ButtonClose = styled.button.attrs(() => ({ type: 'button', }))`
     padding: 5px;
     border-radius: 50%;
     border: none;
